@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> GET METHOD</title>
+        <style>
+            .div{
+                background-color: black;
+                color: white;
+                align-items: center;
+            }
+            body{
+                background-image: url("https://as1.ftcdn.net/v2/jpg/02/85/88/92/1000_F_285889235_4OdZaoyEhH7D1ZBAGrBNsOJrHUHLtM9o.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+                background-attachment: fixed;
+                float: right;
+                padding-top: 10%;
+                padding-right: 8%;
+            }
+            .dic1{
+                font-size: larger;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+                font-weight: bold;
+                color:black;
+            }
+            .table,th,td
+            {
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+            }
+            .submit{
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://localhost:8080" method="get">
+            <center><div class="div"><h1>CALCULATOR</h1></div></center>
+            <div  class="dic1">
+            Enter 1st Number:<input type="number" name="a"><br><br>
+            Enter 2nd Number:<input type="number" name="b"><br><br>
+            Enter Operation :<select type="text" name="sign" value="">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option></select><br><br>
+            <center><input type="submit" name="login" value="=" class="submit">
+        </center>
+            </div>
+        </form>
+    </body>
+</html>
